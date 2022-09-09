@@ -1,0 +1,1618 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.main-header {
+    min-height: 65vh;
+    max-width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(./images/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.logo {
+    width: 60px;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3% 8%;
+    background: transparent;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0px 20px;
+    position: relative;
+}
+
+#mobile {
+    display: none;
+    align-items: center;
+}
+
+#close {
+    display: none;
+}
+
+#navbar li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    transition: 0.6s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: #f44336;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 40%;
+    height: 3px;
+    background: #f44336;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+    transition: 0.5s ease-in;
+}
+
+#hero-section {
+    position: absolute;
+    width: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+.hero-head {
+    font-size: 36px;
+    margin-bottom: 0;
+}
+
+.hero-pgh {
+    font-size: 16px;
+    margin-top: 0;
+}
+
+.hero-link {
+    display: inline-block;
+    padding: 12px 34px;
+    border: 1px solid #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.hero-link:hover {
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+}
+
+.course {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+.course-head {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+
+.course-pgh {
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    margin-top: 0;
+}
+
+.row {
+    margin: 2% 5%; 
+    display: flex; 
+    justify-content: space-between;
+}
+
+.course-col {
+    flex-basis: 31%;
+    background: #fff3f3;
+    padding: 15px 11px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    transition: 0.5s;  
+}
+
+.row-head {
+    text-align: center;
+    font-weight: 600;
+    font-size: 22px;
+    margin: 10px 0;
+}
+
+.row-pgh {
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    margin-top: 0;
+    text-align: center;
+}
+
+.course-col:hover {
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+.campus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -25%;
+}
+
+.camp-head {
+    font-size: 36px;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+.camp-pgh {
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    margin-top: 0;
+}
+
+#slider {
+    overflow: hidden;
+}
+
+#slider figure {
+    position: relative;
+    width: 400%;
+    margin: 0;
+    left: 0;
+    animation: 12s slider infinite;
+    margin-bottom: 0;
+}
+
+#slider figure img {
+    float: left;
+    width: 8%;
+    height: 37%;
+    margin: 0 5px;
+    border-radius: 10px;
+}
+
+@keyframes slider {
+     0% {
+        left: 0;
+     }
+     20% {
+        left: 0;
+     }
+     25% {
+        left: -50%;
+     }
+     45% {
+        left: -50%;
+     }
+     50% {
+        left: -100%;
+     }
+     70% {
+        left: -100%;
+     }
+}
+
+.facility {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.facility h1 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+
+.facility p {
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    margin-top: 0;
+}
+
+.facilities {
+    display: flex;
+    justify-content: space-around;
+    margin: 2% 0 0 5%;
+}
+
+.facilities-img {
+    width: 320px;
+    height: 230px;
+    border-radius: 10px;
+}
+
+.facility-head {
+    font-weight: 600;
+    font-size: 22px;
+    margin: 10px 0;
+}
+
+.facility-pgh {
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    margin-top: 0;
+    width: 80%;
+}
+
+.testimony {
+    text-align: center;
+}
+
+.testimony h1 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+
+.testimony p {
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    margin-top: 0;
+}
+
+.user-img {
+    width: 150px;
+    height: 65px;
+    border-radius: 50%;
+}
+
+.monial {
+    display: flex;
+}
+
+.testimonial {
+    display: flex;
+    margin: 2% 5%;
+    background: #fff3f3;
+    padding: 18px 11px 10px 11px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.testimonial:hover {
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+.testimonial1 {
+    display: flex;
+    margin: 2% 5% ;
+    background: #fff3f3;
+    padding: 18px 11px 10px 11px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.testimonial1:hover {
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+.testimonial-text {
+    text-align: left;
+    margin-left: 10px;
+}
+
+.testimonial .fa {
+    color: #f44336;
+}
+
+.testimonial1 .fa {
+    color: #f44336;
+}
+
+.cta {
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(./images/banner2.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.cta h1 {
+    width: 60%;
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff;
+}
+
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer h4 {
+    margin-bottom: 10px;
+}
+
+.footer p {
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: center;
+}
+
+.icons fa {
+    color: #f44336;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+
+.facebook {
+    color: #f44336;
+}
+
+.gotopbtn {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background: #f44336;
+    bottom: 40px;
+    right: 50px;
+    padding-top: 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    font-size: 22px;
+}
+
+@media screen and (max-width: 480px) {
+    html {
+        scroll-behavior: smooth;
+    }
+
+    #header {
+        padding: 8% 8%;
+    }
+
+    .logo {
+        width: 47px;
+        height: 42px;
+    }
+
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -210px;
+        height: 31vh;
+        border-radius: 11px;
+        width: 150px;
+        background-color: #f44336;
+        margin-top: 0;
+        padding: 80px 0 0 10px;
+        transition: 0.5s;
+        z-index: 2;
+    }
+
+    #navbar.active {
+        right: 0px;
+    }
+
+    #navbar li {
+        margin-bottom: 7px;
+    }
+
+    #navbar li a {
+        font-size: 17px;
+    }
+
+    #navbar li a:hover,
+    #navbar li a.active {
+        color: #fff;
+    }
+
+    #navbar li a.active::after,
+    #navbar li a:hover::after {
+    background: #fff;
+    }
+
+    #mobile {
+        display: flex;
+        align-items: center;
+    }
+
+    #mobile i {
+        color: #fff;
+        font-size: 24px;
+        padding-left: 20px;
+        cursor: pointer;
+    }
+
+    #close {
+        display: block;
+        text-decoration: none;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #fff;
+        font-size: 24px;
+    }
+
+    .hero-head {
+        font-size: 27px;
+        letter-spacing: 0.01rem;
+    }
+
+    .hero-pgh {
+        font-size: 15px;
+        letter-spacing: 1px;
+        margin: 7px 4px;
+
+    }
+
+    .hero-link {
+        padding: 12px 32px;
+        font-size: 15px;
+    }
+
+    .course {
+        margin-top: 4%;
+    }
+
+    .course-head {
+        font-size: 26px;
+        margin-bottom: 8px;
+    }
+
+    .course-pgh {
+        font-size: 16px;
+        text-align: center;
+        width: 80%;   
+    }
+
+    .row {
+        margin: 2% 3%;
+        flex-direction: column;
+    }
+
+    .course-col {
+        margin-bottom: 10px;
+        padding: 21px 14px;
+    }
+
+    .row-head {
+        font-size: 20px;
+        margin: 8px 0;
+    }
+    
+    .row-pgh {
+        font-size: 16px;
+    }
+
+    .campus {
+        margin-bottom: 0;
+    }
+
+    .camp-head {
+        font-size: 26px;
+        margin-bottom: 8px;
+    }
+
+    .camp-pgh {
+        font-size: 16px;
+        text-align: center;
+        width: 80%;   
+    }
+
+    #slider figure img {
+        width: 15%;
+        height: 20%;
+    }
+
+    .facilities {
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 0 0;
+    }
+
+    .img-pgh {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .facility h1 {
+        font-size: 26px;
+        margin-bottom: 8px;
+    }
+    
+    .facility p {
+        font-size: 16px;
+        text-align: center;
+        width: 80%;  
+    }
+
+    .facilities-img {
+        width: 298px;
+        height: 190px;
+        border-radius: 10px;
+    }
+
+    .facility-head {
+        font-size: 20px;
+    }
+    
+    .facility-pgh {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .monial {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .testimonial {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 24px 11px 24px 11px;
+    }
+
+    .testimonial-text {
+        text-align: center;
+    }
+
+    .user-img {
+        width: 170px;
+        height: 150px;
+    }
+
+    .testimonial-text p {
+        font-size: 16px;
+        margin-top: 13px;
+    }
+
+    .testimonial-text h3 {
+        font-size: 20px;
+    }
+
+    .testimonial1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 24px 11px 24px 11px;
+    }
+
+    .cta h1 {
+        font-size: 26px;
+    }
+
+    .footer p {
+        font-size: 15px;
+        margin: 0 10px;
+    }
+
+    .gotopbtn {
+        position: fixed;
+        width: 50px;
+        height: 50px;
+        background: #f44336;
+        bottom: 40px;
+        right: 50px;
+        padding-top: 20px;
+        border-radius: 4px;
+        text-decoration: none;
+        text-align: center;
+        line-height: 50px;
+        color: #fff;
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 600px) and (min-width: 481px) {
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    #header {
+        padding: 8% 8%;
+    }
+    
+    .logo {
+        width: 51px;
+    }
+
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -210px;
+        height: 34vh;
+        border-radius: 11px;
+        width: 152px;
+        background-color: #f44336;
+        margin-top: 0;
+        padding: 80px 0 0 10px;
+        transition: 0.5s;
+        z-index: 2;
+    }
+
+    #navbar.active {
+        right: 0px;
+    }
+
+    #navbar li {
+        margin-bottom: 9px;
+    }
+
+    #navbar li a {
+        font-size: 17px;
+    }
+
+    #navbar li a:hover,
+    #navbar li a.active {
+        color: #fff;
+    }
+
+    #navbar li a.active::after,
+    #navbar li a:hover::after {
+    background: #fff;
+    }
+
+    #mobile {
+        display: flex;
+        align-items: center;
+    }
+
+    #mobile i {
+        color: #fff;
+        font-size: 25px;
+        padding-left: 20px;
+        cursor: pointer;
+    }
+
+    #close {
+        display: block;
+        text-decoration: none;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #fff;
+        font-size: 25px;
+    }
+
+    .hero-head {
+        font-size: 28px;
+        letter-spacing: 0.01rem;
+    }
+
+    .hero-pgh {
+        font-size: 16px;
+        letter-spacing: 1px;
+        margin: 7px 4px;
+
+    }
+
+    .hero-link {
+        padding: 12px 33px;
+        font-size: 16px;
+    }
+
+    .course {
+        margin-top: 5%;
+    }
+
+    .course-head {
+        font-size: 27px;
+        margin-bottom: 8px;
+    }
+
+    .course-pgh {
+        font-size: 16px;
+        text-align: center;
+        width: 80%;   
+    }
+
+    .row {
+        margin: 2% 3%;
+        flex-direction: column;
+    }
+
+    .course-col {
+        margin-bottom: 10px;
+        padding: 21px 14px;
+    }
+
+    .row-head {
+        font-size: 20px;
+        margin: 8px 0;
+    }
+    
+    .row-pgh {
+        font-size: 16px;
+    }
+
+    .campus {
+        margin-bottom: 10px;
+    }
+
+    .camp-head {
+        font-size: 27px;
+        margin-bottom: 8px;
+    }
+
+    .camp-pgh {
+        font-size: 16px;
+        text-align: center;
+        width: 80%;   
+    }
+
+    #slider figure img {
+        width: 15%;
+        height: 20%;
+    }
+
+    .facilities {
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 0 0;
+    }
+
+    .img-pgh {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .facility h1 {
+        font-size: 26px;
+        margin-bottom: 8px;
+    }
+    
+    .facility p {
+        font-size: 16px;
+        text-align: center;
+        width: 80%;  
+    }
+
+    .facilities-img {
+        width: 300px;
+        height: 190px;
+        border-radius: 10px;
+    }
+
+    .facility-head {
+        font-size: 20px;
+    }
+    
+    .facility-pgh {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .monial {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .testimonial {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 24px 11px 24px 11px;
+    }
+
+    .testimonial-text {
+        text-align: center;
+    }
+
+    .user-img {
+        width: 170px;
+        height: 150px;
+    }
+
+    .testimonial-text p {
+        font-size: 16px;
+        margin-top: 13px;
+    }
+
+    .testimonial-text h3 {
+        font-size: 20px;
+    }
+
+    .testimonial1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 24px 11px 24px 11px;
+    }
+
+    .cta h1 {
+        font-size: 27px;
+    }
+
+    .footer p {
+        font-size: 15px;
+        margin: 0 10px;
+    }
+
+    .gotopbtn {
+        position: fixed;
+        width: 50px;
+        height: 50px;
+        background: #f44336;
+        bottom: 40px;
+        right: 50px;
+        padding-top: 20px;
+        border-radius: 4px;
+        text-decoration: none;
+        text-align: center;
+        line-height: 50px;
+        color: #fff;
+        font-size: 22px;
+    }
+}
+
+
+@media screen and (max-width: 768px) and (min-width: 601px) {
+    html {
+        scroll-behavior: smooth;
+    }
+
+    #header {
+        padding: 8% 8%;
+    }
+    .logo {
+        width: 52px;
+    }
+
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -210px;
+        height: 36vh;
+        border-radius: 11px;
+        width: 155px;
+        background-color: #f44336;
+        margin-top: 0;
+        padding: 80px 0 0 10px;
+        transition: 0.5s;
+        z-index: 2;
+    }
+
+    #navbar.active {
+        right: 0px;
+    }
+
+    #navbar li {
+        margin-bottom: 11px;
+    }
+
+    #navbar li a {
+        font-size: 18px;
+    }
+
+    #navbar li a:hover,
+    #navbar li a.active {
+        color: #fff;
+    }
+
+    #navbar li a.active::after,
+    #navbar li a:hover::after {
+    background: #fff;
+    }
+
+    #mobile {
+        display: flex;
+        align-items: center;
+    }
+
+    #mobile i {
+        color: #fff;
+        font-size: 26px;
+        padding-left: 20px;
+        cursor: pointer;
+    }
+
+    #close {
+        display: block;
+        text-decoration: none;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #fff;
+        font-size: 26px;
+    }
+
+    .hero-head {
+        font-size: 30px;
+        letter-spacing: 0.01rem;
+    }
+
+    .hero-pgh {
+        font-size: 17px;
+        letter-spacing: 1px;
+        margin: 9px 4px;
+
+    }
+
+    .hero-link {
+        padding: 12px 34px;
+        font-size: 17px;
+    }
+
+    .course {
+        margin-top: 5%;
+    }
+
+    .course-head {
+        font-size: 30px;
+        margin-bottom: 8px;
+    }
+
+    .course-pgh {
+        font-size: 17px;
+        text-align: center;
+        width: 80%;   
+    }
+
+    .row {
+        margin: 2% 3%;
+        flex-direction: column;
+    }
+
+    .course-col {
+        margin-bottom: 12px;
+        padding: 21px 14px;
+    }
+
+    .row-head {
+        font-size: 21px;
+        margin: 8px 0;
+    }
+    
+    .row-pgh {
+        font-size: 17px;
+    }
+
+    .campus {
+        margin-bottom: 10px;
+    }
+
+    .camp-head {
+        font-size: 30px;
+        margin-bottom: 8px;
+    }
+
+    .camp-pgh {
+        font-size: 17px;
+        text-align: center;
+        width: 80%;   
+    }
+
+    #slider figure img {
+        width: 15%;
+        height: 20%;
+    }
+
+    .facilities {
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 0 0;
+    }
+
+    .img-pgh {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .facility h1 {
+        font-size: 30px;
+        margin-bottom: 8px;
+    }
+    
+    .facility p {
+        font-size: 17px;
+        text-align: center;
+        width: 80%;  
+    }
+
+    .facilities-img {
+        width: 320px;
+        height: 200px;
+        border-radius: 10px;
+    }
+
+    .facility-head {
+        font-size: 21px;
+    }
+    
+    .facility-pgh {
+        font-size: 17px;
+        text-align: center;
+    }
+
+    .testimony h1 {
+        font-size: 30px;
+    }
+
+    .testimony p {
+        font-size: 17px;
+    }
+
+    .monial {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .testimonial {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 24px 11px 24px 11px;
+    }
+
+    .testimonial-text {
+        text-align: center;
+    }
+
+    .user-img {
+        width: 170px;
+        height: 150px;
+    }
+
+    .testimonial-text p {
+        font-size: 17px;
+        margin-top: 13px;
+    }
+
+    .testimonial-text h3 {
+        font-size: 21px;
+    }
+
+    .testimonial1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 24px 11px 24px 11px;
+    }
+
+    .cta h1 {
+        font-size: 30px;
+    }
+
+    .footer p {
+        font-size: 16px;
+        margin: 0 10px;
+    }
+
+    .gotopbtn {
+        position: fixed;
+        width: 50px;
+        height: 50px;
+        background: #f44336;
+        bottom: 40px;
+        right: 50px;
+        padding-top: 20px;
+        border-radius: 4px;
+        text-decoration: none;
+        text-align: center;
+        line-height: 50px;
+        color: #fff;
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 900px) and (min-width: 769px) {
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    #header {
+        padding: 8% 8%;
+    }
+    .logo {
+        width: 53px;
+    }
+
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -210px;
+        height: 35vh;
+        border-radius: 12px;
+        width: 155px;
+        background-color: #f44336;
+        margin-top: 0;
+        padding: 80px 0 0 10px;
+        transition: 0.5s;
+        z-index: 2;
+    }
+
+    #navbar.active {
+        right: 0px;
+    }
+
+    #navbar li {
+        margin-bottom: 11px;
+    }
+
+    #navbar li a {
+        font-size: 18px;
+    }
+
+    #navbar li a:hover,
+    #navbar li a.active {
+        color: #fff;
+    }
+
+    #navbar li a.active::after,
+    #navbar li a:hover::after {
+    background: #fff;
+    }
+
+    #mobile {
+        display: flex;
+        align-items: center;
+    }
+
+    #mobile i {
+        color: #fff;
+        font-size: 27px;
+        padding-left: 20px;
+        cursor: pointer;
+    }
+
+    #close {
+        display: block;
+        text-decoration: none;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #fff;
+        font-size: 27px;
+    }
+
+    .hero-head {
+        font-size: 32px;
+    }
+
+    .hero-pgh {
+        font-size: 18px;
+        margin: 9px 4px;
+
+    }
+
+    .hero-link {
+        padding: 12px 35px;
+        font-size: 18px;
+    }
+
+    .course {
+        margin-top: 5%;
+    }
+
+    .course-head {
+        font-size: 31px;
+        margin-bottom: 8px;
+    }
+
+    .course-pgh {
+        font-size: 18px;
+        text-align: center;
+        width: 80%;   
+    }
+
+    .row {
+        margin: 2% 3%;
+        flex-direction: column;
+    }
+
+    .course-col {
+        margin-bottom: 12px;
+        padding: 21px 14px;
+    }
+
+    .row-head {
+        font-size: 21px;
+        margin: 8px 0;
+    }
+    
+    .row-pgh {
+        font-size: 18px;
+    }
+
+    .campus {
+        margin-bottom: 10px;
+    }
+
+    .camp-head {
+        font-size: 31px;
+        margin-bottom: 8px;
+    }
+
+    .camp-pgh {
+        font-size: 18px;
+        text-align: center;
+        width: 80%;   
+    }
+
+    #slider figure img {
+        width: 15%;
+        height: 20%;
+    }
+
+    .facilities {
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 0 0;
+    }
+
+    .img-pgh {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .facility h1 {
+        font-size: 31px;
+        margin-bottom: 8px;
+    }
+    
+    .facility p {
+        font-size: 18px;
+        text-align: center;
+        width: 80%;  
+    }
+
+    .facilities-img {
+        width: 330px;
+        height: 210px;
+        border-radius: 10px;
+    }
+
+    .facility-head {
+        font-size: 21px;
+    }
+    
+    .facility-pgh {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .testimony h1 {
+        font-size: 31px;
+    }
+
+    .testimony p {
+        font-size: 18px;
+    }
+
+    .monial {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .testimonial {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 24px 11px 24px 11px;
+    }
+
+    .testimonial-text {
+        text-align: center;
+    }
+
+    .user-img {
+        width: 170px;
+        height: 150px;
+    }
+
+    .testimonial-text p {
+        font-size: 18px;
+        margin-top: 13px;
+    }
+
+    .testimonial-text h3 {
+        font-size: 21px;
+    }
+
+    .testimonial1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 24px 11px 24px 11px;
+    }
+
+    .cta h1 {
+        font-size: 31px;
+    }
+
+    .footer p {
+        font-size: 17px;
+        margin: 0 10px;
+    }
+
+    .gotopbtn {
+        position: fixed;
+        width: 50px;
+        height: 50px;
+        background: #f44336;
+        bottom: 40px;
+        right: 50px;
+        padding-top: 20px;
+        border-radius: 4px;
+        text-decoration: none;
+        text-align: center;
+        line-height: 50px;
+        color: #fff;
+        font-size: 22px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
