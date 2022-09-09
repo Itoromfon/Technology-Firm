@@ -11,7 +11,7 @@ html {
 .main-header {
     min-height: 65vh;
     max-width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(./images/banner.jpg);
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(./banner.jpg);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -353,7 +353,7 @@ html {
 .cta {
     margin: 100px auto;
     width: 80%;
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(./images/banner2.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(./banner2.jpg);
     background-size: cover;
     background-position: center;
     border-radius: 10px;
