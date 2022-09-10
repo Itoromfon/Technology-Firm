@@ -14,6 +14,7 @@ html {
     background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(./banner.jpg);
     background-size: cover;
     background-position: center;
+    object-fit: cover;
     position: relative;
 }
 
@@ -211,6 +212,7 @@ html {
     height: 37%;
     margin: 0 5px;
     border-radius: 10px;
+    object-fit: cover;
 }
 
 @keyframes slider {
@@ -261,6 +263,7 @@ html {
 }
 
 .facilities-img {
+    object-fit: cover;
     width: 320px;
     height: 230px;
     border-radius: 10px;
@@ -300,6 +303,7 @@ html {
 }
 
 .user-img {
+    object-fit: cover;
     width: 150px;
     height: 65px;
     border-radius: 50%;
@@ -356,6 +360,7 @@ html {
     background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(./banner2.jpg);
     background-size: cover;
     background-position: center;
+    object-fit: cover;
     border-radius: 10px;
     text-align: center;
     padding: 100px 0;
