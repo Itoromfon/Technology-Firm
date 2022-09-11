@@ -384,11 +384,12 @@ html {
 
 .footer h4 {
     margin-bottom: 10px;
+    font-size: 20px;
 }
 
 .footer p {
     color: #777;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 300;
     line-height: 22px;
     margin-top: 0;
@@ -410,7 +411,7 @@ html {
     color: #f44336;
 }
 
-.gotopbtn {
+#gotopbtn {
     position: fixed;
     width: 50px;
     height: 50px;
@@ -657,7 +658,7 @@ html {
         font-size: 15px;
     }
 
-    .gotopbtn {
+    #gotopbtn {
         position: fixed;
         width: 50px;
         height: 50px;
@@ -904,7 +905,7 @@ html {
         font-size: 15px;
     }
 
-    .gotopbtn {
+    #gotopbtn {
         position: fixed;
         width: 50px;
         height: 50px;
@@ -1159,7 +1160,7 @@ html {
         font-size: 16px;
     }
 
-    .gotopbtn {
+    #gotopbtn {
         position: fixed;
         width: 50px;
         height: 50px;
@@ -1411,7 +1412,7 @@ html {
         font-size: 17px;
     }
 
-    .gotopbtn {
+    #gotopbtn {
         position: fixed;
         width: 50px;
         height: 50px;

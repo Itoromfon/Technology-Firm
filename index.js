@@ -1,6 +1,7 @@
 const bar = document.getElementById("bar")
 const close = document.getElementById("close")
 const nav = document.getElementById("navbar")
+const topButton = document.getElementById("gotopbtn")
 
 if (bar) {
     bar.addEventListener("click", function() {
@@ -19,6 +20,10 @@ if (nav) {
         nav.classList.remove("active")
     })
 }
+
+topButton.addEventListener("click", function() {
+    console.log("This is the go top button!!!")
+})
 
 
 
