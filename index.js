@@ -2,6 +2,7 @@ const bar = document.getElementById("bar")
 const close = document.getElementById("close")
 const nav = document.getElementById("navbar")
 const topButton = document.getElementById("gotopbtn")
+const home = document.getElementById("home")
 
 if (bar) {
     bar.addEventListener("click", function() {
@@ -21,9 +22,11 @@ if (nav) {
     })
 }
 
-topButton.addEventListener("click", function() {
-    console.log("This is the go top button!!!")
-})
+if (home) {
+    topButton.addEventListener("click", function() {
+        topButton = "position: sticky"
+    })
+}
 
 
 
