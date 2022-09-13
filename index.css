@@ -425,6 +425,7 @@ html {
     line-height: 50px;
     color: #fff;
     font-size: 22px;
+    display: none;
 }
 
 @media screen and (max-width: 480px) {
