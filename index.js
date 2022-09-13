@@ -22,11 +22,6 @@ if (nav) {
     })
 }
 
-if (home) {
-    topButton.addEventListener("click", function() {
-        topButton = "position: sticky"
-    })
-}
 
 
 
