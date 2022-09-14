@@ -506,14 +506,17 @@ input {
 }
 
 .send-btn:hover {
-    background: orangered;
+    background: blue;
+    border: 1px solid blue;
+    transition: 2s;
     color: #fff;
 }
 
 .textarae {
     padding: 5px 5px;
     width: 300px;
-    height: 90px;
+    height: 130px;
+    padding-top: 0;
 }
 
 @media screen and (max-width: 480px) {
