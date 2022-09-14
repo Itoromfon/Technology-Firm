@@ -2,6 +2,7 @@ const bar = document.getElementById("bar")
 const close = document.getElementById("close")
 const nav = document.getElementById("navbar")
 const topBtn = document.getElementById("gotopbtn")
+const heroLink = document.getElementById("hero-link")
 
 if (bar) {
     bar.addEventListener("click", function() {
@@ -31,6 +32,10 @@ function topButton() {
     }, 250)
 }
 topButton();
+
+function togglePopup() {
+    document.getElementById("popup-1").classList.toggle("active");
+}
 
 
 

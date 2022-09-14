@@ -31,7 +31,7 @@
             <div id="hero-section">
                 <h1 class="hero-head">World's Largest Tech Firm</h1>
                 <p class="hero-pgh">Making Technology accessible to everyone across the globe.</p>
-                <a class="hero-link" href="#">Visit Us To Know More</a>
+                <a id="hero-link" href="#">Visit Us To Know More</a>
             </div>
         </div>
 
@@ -162,18 +162,35 @@
             <h1>Enroll For Our Various Online Courses Anywhere
                 From The World
             </h1>
-            <a href="#" class="hero-link">CONTACT US</a>
+            <!-- <a href="#" id="hero-link">CONTACT US</a>  -->
+            <div class="popup" id="popup-1">
+                <div class="overlay"></div>
+                <div class="content">
+                    <div class="close-btn" onclick="togglePopup()">&times;</div>
+                    <div id="inputs">
+                        <input type="text" placeholder="Name">
+                        <input type="email" placeholder="Email">
+                        <input type="text" class="textarae">
+                        <button class="send-btn">Send</button>
+                    </div>
+                </div>
+            </div>
+            <!-- <button id="hero-link" onclick="togglePopup()">Show Popup</button> -->
+            <a href="#" id="hero-link" onclick="togglePopup()">CONTACT US</a>
         </div>
+
+        
+        
 
         <!-- Footer -->
         <div class="footer">
             <h4>About Us</h4>
             <p>Our Tech firm is a world class firm with modern 
-                facilities that help improve individuals intellectual
-                capacity and exposes them to vital informations
+            facilities that help improve individuals intellectual
+            capacity and exposes them to vital informations.
             </p>
             <div class="icons">
-                <i id="facebook" class="fa fa-facebook" aria-hidden="true"></i>
+                <i class="fa fa-facebook"></i>
                 <i class="fa fa-twitter"></i>
                 <i class="fa fa-instagram"></i>
                 <i class="fa fa-linkedin"></i>

@@ -96,7 +96,7 @@ html {
     margin-top: 0;
 }
 
-.hero-link {
+#hero-link {
     display: inline-block;
     padding: 12px 34px;
     border: 1px solid #fff;
@@ -107,7 +107,7 @@ html {
     cursor: pointer;
 }
 
-.hero-link:hover {
+#hero-link:hover {
     border: 1px solid #f44336;
     background: #f44336;
     transition: 1s;
@@ -208,7 +208,7 @@ html {
 #slider figure img {
     float: left;
     width: 8%;
-    height: 75%;
+    height: 85%;
     margin: 0 5px;
     border-radius: 10px;
     object-fit: cover;
@@ -399,11 +399,12 @@ html {
     text-align: center;
 }
 
-.icons fa {
+.icons {
     color: #f44336;
     margin: 0 13px;
     cursor: pointer;
-    padding: 18px 0;
+    padding: 12px 0;
+    font-size: 25px;
 }
 
 .facebook {
@@ -425,6 +426,94 @@ html {
     color: #fff;
     font-size: 22px;
     display: none;
+}
+
+.popup .overlay {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.7);
+    z-index: 1;
+    display: none;
+}
+
+.popup .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: #fff;
+    width: 450px;
+    height: 350px;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.popup .close-btn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+    background: #222;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.popup.active .overlay {
+    display: block;
+}
+
+.popup.active .content {
+    transition: all 300ms ease-in-out;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+#inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+input {
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #777;
+    padding: 12px 24px;
+    margin: 10px;
+}
+
+.send-btn {
+    background: #f44336;
+    padding: 12px 50px;
+    border: 1px solid #f44336;
+    font-size: 17px;
+    font-weight: 600;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.send-btn:hover {
+    background: orangered;
+    color: #fff;
+}
+
+.textarae {
+    padding: 5px 5px;
+    width: 300px;
+    height: 90px;
 }
 
 @media screen and (max-width: 480px) {
@@ -515,7 +604,7 @@ html {
 
     }
 
-    .hero-link {
+    #hero-link {
         padding: 12px 32px;
         font-size: 15px;
     }
@@ -570,7 +659,7 @@ html {
     }
 
     #slider figure img {
-        width: 15%;
+        width: 9%;
         height: 20%;
     }
 
@@ -762,7 +851,7 @@ html {
 
     }
 
-    .hero-link {
+    #hero-link {
         padding: 12px 33px;
         font-size: 16px;
     }
@@ -817,8 +906,8 @@ html {
     }
 
     #slider figure img {
-        width: 15%;
-        height: 20%;
+        width: 9%;
+        height: 21%;
     }
 
     .facilities {
@@ -1009,7 +1098,7 @@ html {
 
     }
 
-    .hero-link {
+    #hero-link {
         padding: 12px 34px;
         font-size: 17px;
     }
@@ -1064,8 +1153,8 @@ html {
     }
 
     #slider figure img {
-        width: 15%;
-        height: 20%;
+        width: 9%;
+        height: 22%;
     }
 
     .facilities {
@@ -1261,7 +1350,7 @@ html {
 
     }
 
-    .hero-link {
+    #hero-link {
         padding: 12px 35px;
         font-size: 18px;
     }
@@ -1316,8 +1405,8 @@ html {
     }
 
     #slider figure img {
-        width: 15%;
-        height: 20%;
+        width: 9%;
+        height: 22%;
     }
 
     .facilities {
